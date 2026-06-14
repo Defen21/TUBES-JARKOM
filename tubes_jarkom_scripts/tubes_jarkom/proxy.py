@@ -11,7 +11,7 @@ PROXY_HOST = "0.0.0.0"
 PROXY_PORT = 8080
 
 # SERVER_HOST adalah IP tujuan webserver (Teman 2)
-SERVER_HOST = "<ISI_IP_TEMAN_2_DISINI>" # IP laptop Teman 2
+SERVER_HOST = "192.168.0.102" # IP laptop Teman 2
 SERVER_PORT = 8000
 
 BUFFER_SIZE = 4096

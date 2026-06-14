@@ -6,9 +6,9 @@ from datetime import datetime
 
 # HTTP_HOST dan UDP_HOST adalah IP interface webserver mendengarkan.
 # "0.0.0.0" berarti mendengarkan di semua IP (termasuk IP LAN Teman 2).
-HTTP_HOST = "<BOLEH DI ISI 0.0.0.0 ATAU ISI IP TEMAN 2>"
+HTTP_HOST = "192.168.0.102"
 HTTP_PORT = 8000
-UDP_HOST = "<BOLEH DI ISI 0.0.0.0 ATAU ISI IP TEMAN 2>"
+UDP_HOST = "192.168.0.102"
 UDP_PORT = 9000
 WEB_ROOT = "HTML"
 BUFFER_SIZE = 4096
