@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Implementasi</h1>
+        <p>Konfigurasi dan cara pengujian sistem</p>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/tcpip.html">TCP/IP</a>
+        <a href="/osi.html">OSI</a>
+        <a href="/qos.html">QoS</a>
+        <a href="/implementation.html">Implementasi</a>
+    </nav>
+
+    <main>
+
+        <section class="card">
+            <h2>Implementasi Sistem</h2>
+            <p>
+                Sistem terdiri dari tiga file Python: <code>client.py</code>, <code>proxy.py</code>,
+                dan <code>webserver.py</code>. Semua komunikasi jaringan menggunakan modul
+                <code>socket</code> secara manual.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Konfigurasi Port</h2>
+            <table>
+                <tr><th>Komponen</th><th>Port</th><th>Fungsi</th></tr>
+                <tr><td>Proxy</td><td>8080</td><td>Menerima HTTP request dari client</td></tr>
+                <tr><td>Web Server TCP</td><td>8000</td><td>Melayani file HTML</td></tr>
+                <tr><td>Web Server UDP</td><td>9000</td><td>UDP echo untuk QoS</td></tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Pengujian</h2>
+            <pre>python webserver.py
+python proxy.py
+python client.py --mode tcp --path /index.html
+python client.py --mode udp
+python client.py --mode multi --clients 5</pre>
+        </section>
+
+    </main>
+
+    <footer>
+        Tugas Besar Jaringan Komputer - Client Proxy Server berbasis Socket Python
+    </footer>
+</body>
+</html>

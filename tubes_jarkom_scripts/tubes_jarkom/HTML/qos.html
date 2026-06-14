@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality of Service</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quality of Service</h1>
+        <p>RTT, packet loss, jitter, dan throughput</p>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/tcpip.html">TCP/IP</a>
+        <a href="/osi.html">OSI</a>
+        <a href="/qos.html">QoS</a>
+        <a href="/implementation.html">Implementasi</a>
+    </nav>
+
+    <main>
+
+        <section class="card">
+            <h2>Quality of Service</h2>
+            <p>
+                QoS digunakan untuk mengukur kualitas komunikasi jaringan. Dalam tugas ini,
+                parameter yang dihitung meliputi RTT, packet loss, jitter, dan throughput.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Parameter QoS</h2>
+            <table>
+                <tr><th>Parameter</th><th>Penjelasan</th></tr>
+                <tr><td>RTT</td><td>Waktu bolak-balik paket dari client ke server dan kembali ke client.</td></tr>
+                <tr><td>Packet Loss</td><td>Persentase paket UDP yang tidak mendapat balasan.</td></tr>
+                <tr><td>Jitter</td><td>Variasi delay antar paket.</td></tr>
+                <tr><td>Throughput</td><td>Jumlah data berhasil diterima per satuan waktu.</td></tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Contoh Output UDP</h2>
+            <pre>Reply from 192.168.0.103: seq=1 RTT=2.15 ms
+Reply from 192.168.0.103: seq=2 RTT=1.98 ms
+Packet Loss: 0.00%
+Avg RTT: 2.06 ms</pre>
+        </section>
+
+    </main>
+
+    <footer>
+        Tugas Besar Jaringan Komputer - Client Proxy Server berbasis Socket Python
+    </footer>
+</body>
+</html>

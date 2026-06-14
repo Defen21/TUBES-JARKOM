@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubes Jaringan Komputer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tubes Jaringan Komputer</h1>
+        <p>Implementasi Client-Proxy-Server berbasis Socket Python</p>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/tcpip.html">TCP/IP</a>
+        <a href="/osi.html">OSI</a>
+        <a href="/qos.html">QoS</a>
+        <a href="/implementation.html">Implementasi</a>
+    </nav>
+
+    <main>
+
+        <section class="card">
+            <span class="badge">Client - Proxy - Server</span>
+            <h2>Selamat Datang</h2>
+            <p>
+                Website ini digunakan sebagai aset pengujian untuk tugas besar Jaringan Komputer.
+                Halaman ini disajikan oleh <strong>webserver.py</strong>, diteruskan oleh
+                <strong>proxy.py</strong>, dan diminta oleh <strong>client.py</strong>.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Client</h3>
+                <p>Mengirim HTTP request ke proxy dan menjalankan UDP ping untuk pengukuran QoS.</p>
+            </div>
+            <div class="card">
+                <h3>Proxy</h3>
+                <p>Meneruskan request ke server, menyimpan cache, dan mengembalikan response ke client.</p>
+            </div>
+            <div class="card">
+                <h3>Web Server</h3>
+                <p>Melayani file HTML statis melalui TCP dan memantulkan paket UDP sebagai echo server.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Alur Sistem</h2>
+            <pre>Client --TCP:8080--> Proxy --TCP:8000--> Web Server
+Client --UDP:9000-----------------------> UDP Echo Server</pre>
+            <p>
+                Request HTTP wajib melewati proxy. Cache HIT berarti proxy mengirim response dari cache,
+                sedangkan cache MISS berarti proxy meneruskan request ke web server.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        Tugas Besar Jaringan Komputer - Client Proxy Server berbasis Socket Python
+    </footer>
+</body>
+</html>
