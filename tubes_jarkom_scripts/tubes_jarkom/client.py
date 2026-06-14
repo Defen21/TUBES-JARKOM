@@ -8,9 +8,9 @@ import threading
 # - Kamu (Client) menjalankan: client.py
 # - Teman 1 (Proxy) menjalankan: proxy.py
 # - Teman 2 (Webserver) menjalankan: webserver.py
-DEFAULT_PROXY_HOST = "192.168.0.103" # IP laptop Teman 1 (Proxy)
+DEFAULT_PROXY_HOST = "192.168.0.102" # IP laptop Teman 1 (Proxy)
 DEFAULT_PROXY_PORT = 8080
-DEFAULT_UDP_HOST = "192.168.0.103" # IP laptop Teman 2 (Webserver & UDP Server)
+DEFAULT_UDP_HOST = "192.168.0.102" # IP laptop Teman 2 (Webserver & UDP Server)
 DEFAULT_UDP_PORT = 9000
 BUFFER_SIZE = 8192
 
