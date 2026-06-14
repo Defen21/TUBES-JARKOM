@@ -1,0 +1,23 @@
+# Ignore large archives
+*.zip
+*.rar
+*.7z
+
+# Ignore Microsoft Word files / templates
+*.docx
+~*
+
+# Ignore Python cache & temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Ignore proxy cache directory
+cache/
+
+# Ignore IDE files
+.vscode/
+.idea/
